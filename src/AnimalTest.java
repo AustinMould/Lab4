@@ -23,5 +23,23 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
+    public void fullConstructorTest() throws AssertException
+    {
+    	//Declare and initialize values to compare
+    	Animal Zebra = new Animal("Striped", "Ziggy", 400.4034, 5.8746);
+    	String ZebraColor = "Striped";
+    	String ZebraName = "Ziggy";
+    	double ZebraWeight = 400.4034;
+    	double ZebraHeight = 5.8746;
+    	
+    	//Compare values with the getter methods
+    	Assert.assertEquals(ZebraColor, Zebra.getColor());
+    	Assert.assertEquals(ZebraName, Zebra.getName());
+    	Assert.assertEquals(ZebraWeight, Zebra.getWeight());
+    	Assert.assertEquals(ZebraHeight, Zebra.getHeight());
+    	
+    	//Print toString method
+    	System.out.println(Zebra.toString());
+    }
 }
 
