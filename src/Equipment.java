@@ -124,6 +124,24 @@ public class Equipment
 
         // Check that all fields match (name, count, totalWeight, totalPrice, and description):
       
-        // TODO: finish method
+        String compareName1 = otherEq.getName();
+        int compareCount1 = otherEq.getCount();
+        double compareWeight1 = otherEq.getTotalWeight();
+        double comparePrice1 = otherEq.getTotalPrice();
+        String compareDescription1 = otherEq.getDescription();
+        
+        String compareName2 = this.getName();
+        int compareCount2 = this.getCount();
+        double compareWeight2 = this.getTotalWeight();
+        double comparePrice2 = this.getTotalPrice();
+        String compareDescription2 = this.getDescription();
+        
+        if((compareName1.equals(compareName2)) && (compareCount1 == compareCount2) && (compareWeight1 == compareWeight2) && (comparePrice1 == comparePrice2) 
+        		&& (compareDescription1.equals(compareDescription2))) {
+        	return true;
+        }
+        else {
+        	return false;
+        }
     }
 }
