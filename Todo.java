@@ -24,5 +24,6 @@ Estimated Time (minutes):
 
 Actual Time (minutes):
 1. 010
-2. XXX
+2. 010
+3. 
 */}
