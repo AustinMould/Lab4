@@ -4,7 +4,7 @@ public class EquipmentTest {
 	public void constructorTest() throws AssertException
     {
 		//full constructor method
-		Equipment equipment = new Equipment("Heat vision/2, 0.0, 0.0 - Really hot lazer beams from the eyes");
+		Equipment equipment = new Equipment("Heat vision/2,0.0,0.0,Really hot lazer beams from the eyes");
 		
 		//getter tests
 		Assert.assertEquals("Heat vision", equipment.getName());

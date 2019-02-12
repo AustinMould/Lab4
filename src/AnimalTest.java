@@ -39,7 +39,7 @@ public class AnimalTest
     	Assert.assertEquals(ZebraHeight, Zebra.getHeight());
     
     	//Compare values of toString
-    	String ZiggyString = "Ziggy, a Striped-colored animal. 400.4034 pounds, 65.8746 inches.\n";
+    	String ZiggyString = "Ziggy, a Striped-colored animal. 400.4 pounds, 65.9 inches\n";
     	String ZebraString = Zebra.toString();
     	Assert.assertEquals(ZiggyString, ZebraString);
     }
